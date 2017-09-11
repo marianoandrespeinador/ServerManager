@@ -15,8 +15,9 @@ import { Routes, RouterModule } from '@angular/router';
 //localhost:5000/users
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'servers', component: ServersComponent },
-    { path: 'users', component: UsersComponent }
+    { path: 'users/:id/:name', component: UserComponent },
+    { path: 'users', component: UsersComponent },
+    { path: 'servers', component: ServersComponent }
 ];
 
 export const sharedConfig: NgModule = {
